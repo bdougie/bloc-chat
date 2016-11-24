@@ -14,8 +14,8 @@
   <div class="room-name">{{home.currentRoom}}</div>
 	<div class="room-messages">
 		<div class="room-user"></div>
-		<div class="room-content" ng-repeat="messages in home.messages">
-      		{{ messages.$value }}
+		<div class="room-content" ng-repeat="message in home.messages()">
+      		{{ message }}
     	</div>
 		<div class="room-time"></div>
 	</div>
